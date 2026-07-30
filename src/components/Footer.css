@@ -1,0 +1,68 @@
+.footer {
+  background: rgba(11, 18, 32, 0.6);
+  color: var(--slate-on-ink);
+  padding: 2rem var(--edge);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.footer__inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footer__contact p {
+  margin: 0.3rem 0;
+}
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  max-width: 320px;
+}
+
+.footer__form input,
+.footer__form textarea {
+  background: var(--ink-soft);
+  border: none;
+  padding: 0.6rem;
+  color: var(--slate-on-ink);
+  border-radius: 6px;
+  font-family: var(--font-mono);
+}
+
+.footer__form button {
+  background: var(--teal);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.footer__form button:hover {
+  background: var(--teal-soft);
+}
+
+.footer__messages {
+  margin-top: 1rem;
+  max-width: 320px;
+}
+
+.footer__messages ul {
+  padding-left: 1rem;
+  margin: 0.5rem 0 0 0;
+}
+
+.footer__messages li {
+  margin-bottom: 0.3rem;
+}

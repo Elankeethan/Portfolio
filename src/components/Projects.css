@@ -1,0 +1,116 @@
+.projects { background: var(--ink); color: var(--paper); }
+.projects .eyebrow { color: var(--teal-soft); }
+.projects .eyebrow::before { background: var(--teal-soft); }
+
+.projects__featured {
+  margin-top: 2.4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
+}
+
+.project-card {
+  border: 1px solid var(--line-on-ink);
+  border-radius: 8px;
+  padding: 1.8rem;
+  background: var(--ink-soft);
+  box-shadow: 0 20px 40px -24px rgba(0, 0, 0, 0.6);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.project-card:hover {
+  border-color: var(--teal);
+  transform: translateY(-2px);
+}
+
+.project-card__tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--coral);
+  letter-spacing: 0.04em;
+}
+
+.project-card__title {
+  font-size: 1.55rem;
+  margin-top: 0.55rem;
+}
+
+.project-card__subtitle {
+  color: var(--teal-soft);
+  font-size: 0.95rem;
+  margin-top: 0.2rem;
+}
+
+.project-card__desc {
+  margin-top: 0.9rem;
+  color: var(--slate-on-ink);
+  font-size: 0.96rem;
+}
+
+.project-card__points {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.project-card__points li {
+  font-size: 0.85rem;
+  color: var(--paper);
+  padding-left: 1rem;
+  position: relative;
+}
+
+.project-card__points li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--teal-soft);
+}
+
+.project-card__role {
+  margin-top: 1.1rem;
+  font-size: 0.85rem;
+  color: var(--slate-on-ink);
+  border-top: 1px solid var(--line-on-ink);
+  padding-top: 0.9rem;
+}
+
+.projects__subheading {
+  margin-top: 3.2rem;
+  font-size: 1.1rem;
+  color: var(--paper);
+}
+
+.projects__side-grid {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.4rem;
+}
+
+.side-project {
+  border-top: 1px solid var(--line-on-ink);
+  padding-top: 1rem;
+}
+
+.side-project h4 { font-size: 1.02rem; }
+
+.side-project__stack {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--teal-soft);
+  margin: 0.35rem 0 0.6rem;
+}
+
+.side-project p:last-child {
+  color: var(--slate-on-ink);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 860px) {
+  .projects__featured, .projects__side-grid { grid-template-columns: 1fr; }
+}
