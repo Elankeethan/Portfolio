@@ -86,3 +86,4 @@ nginx.conf
 netlify.toml
 .env.example
 ```
+Deployed live on Netlify with automatic CI/CD.
