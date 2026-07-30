@@ -5,12 +5,11 @@
 
 export const site = {
   name: 'S. Elankeethan',
-  github: "https://github.com/elankeethan",
-  linkedin: "https://www.linkedin.com/in/santhiratheva-elankeethan",
-  email: "Santhiratheva23Elankeethan@gmail.com",
-  phone: "0777475163",
-  facebook: "",
-  // keep other fields unchanged
+  github: import.meta.env.VITE_GITHUB_URL || '',
+  linkedin: import.meta.env.VITE_LINKEDIN_URL || '',
+  email: import.meta.env.VITE_EMAIL || '',
+  phone: import.meta.env.VITE_PHONE || '',
+  facebook: import.meta.env.VITE_FACEBOOK_URL || '',
 
   location: import.meta.env.VITE_LOCATION || '',
   cvUrl: import.meta.env.VITE_CV_URL || '#',
